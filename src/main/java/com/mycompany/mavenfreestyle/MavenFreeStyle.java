@@ -16,9 +16,9 @@ public class MavenFreeStyle {
     }
     
     public int fibonacci(int a){	
-	if (a >= 2){
-            return (fibonacci(a-1) + fibonacci(a-2));
-	}
-	return 0;
+	if (a <=1)
+		return a;
+         else 
+	         return fibonacci(a - 1) + fibonacci(a - 2);
     }
 }
